@@ -25,7 +25,7 @@ while ( j < 4)
 {
     System.Console.WriteLine(fruits[j]);
     j++;
-}*/
+}
 // Methods
 
 using System.Numerics;
@@ -48,3 +48,39 @@ static int Sum(int Num1, int Num2)
 }
 
 System.Console.WriteLine(Sum(33,88));
+
+List<int> marks = new List<int> { 78, 85, 92, 67, 55 };
+
+Console.WriteLine("Marks: " + string.Join(", ", marks));
+
+int total = 0;
+double avg = 0;
+foreach (int mark in marks)
+{
+    total += mark;
+}
+System.Console.WriteLine("Total:" + total);
+int ValuesCount = marks.Count;
+ avg = (double)(total) /ValuesCount;
+System.Console.WriteLine("Average:" + avg);
+System.Console.WriteLine("Grade:" + GetGrade((double) avg));
+
+static string GetGrade(double marks)
+{
+    if (marks >= 90) return "A+";
+     if (marks >= 80) return "A";
+      if (marks >= 70) return "B";
+      else return "F"; 
+}*/
+       Console.Write("Enter a number: ");
+int ValueA = int.Parse (Console.ReadLine());
+       Console.Write("Enter a number: ");
+int ValueB = int.Parse (Console.ReadLine());
+string[]  operations = ["+", "-" , "*", "/"];
+Console.Write("Operation to be performed: +, -,*,/ ");
+string operation = (Console.ReadLine());
+
+// Program.cs
+var calc = new Calculator();
+Console.WriteLine(calc.Add(ValueA, ValueB));
+
