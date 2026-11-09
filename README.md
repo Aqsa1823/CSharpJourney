@@ -1,4 +1,9 @@
-# C-Sharp-Journey
-Practicing c# basics
-Day 01
-Topics that are done Data and variable, methods (void and param), array
+# C# Journey
+
+Main C# aur .NET seekh rahi hoon. Har din ka code yahan hai.
+
+## Day 01
+- Variables aur data types
+- if/else, switch, loops
+- Methods
+- Arrays, List, Dictionary
